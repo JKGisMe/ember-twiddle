@@ -9,9 +9,9 @@ module.exports = function() {
   var isProductionLikeBuild = ['production', 'staging'].indexOf(env) > -1;
   var prepend = null;
 
-  if(isProductionLikeBuild) {
-    prepend = env==='production' ? '//assets.ember-twiddle.com/' : '//canary-assets.ember-twiddle.com/';
-  }
+  // if(isProductionLikeBuild) {
+  //   prepend = env==='production' ? '//assets.ember-twiddle.com/' : '//canary-assets.ember-twiddle.com/';
+  // }
 
   var blueprintsCode = getEmberCLIBlueprints();
 
